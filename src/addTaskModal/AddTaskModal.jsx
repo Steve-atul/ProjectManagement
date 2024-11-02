@@ -132,7 +132,9 @@ export const AddTaskModal = ({ openAddTaskModal, setOpenAddTaskModal }) => {
       toast.success(res?.data?.message);
      
       handleReset();
-      window.location.reload();
+      // window.location.reload();
+            window.location=window.location;
+
 
     } catch (error) {
       setShowError(true);
