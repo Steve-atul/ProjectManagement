@@ -1,0 +1,63 @@
+.container {
+  padding: 1.4rem 2rem 0 2rem;
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .miniContent {
+      display: flex;
+      gap: 0 2rem;
+
+      .board {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      .addPeople {
+        display: flex;
+        align-items: center;
+        gap: 0 0.5rem;
+        font-size: 0.9rem;
+        color: gray;
+        cursor: pointer;
+      }
+    }
+
+    select {
+      border: none;
+    }
+  }
+
+  .mainCards {
+    display: -webkit-box;
+    gap: 1rem 2rem;
+    overflow-x: auto;
+  }
+
+  .mainCards::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  .mainCards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .mainCards::-webkit-scrollbar-thumb {
+    background: #9cb7c5;
+    border-radius: 10px;
+  }
+
+  .mainCards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

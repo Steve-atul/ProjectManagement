@@ -1,0 +1,30 @@
+.container {
+  padding: 1.4rem 2rem;
+
+  .analyticWrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .analytic {
+      background-color: #f9fcff;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem 0;
+
+      .singleAnalytic {
+        display: flex;
+        justify-content: space-between;
+
+        .titleContent {
+          display: flex;
+          align-items: center;
+          gap: 0 0.2rem;
+        }
+      }
+    }
+  }
+}

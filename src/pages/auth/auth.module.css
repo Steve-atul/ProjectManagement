@@ -1,0 +1,49 @@
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative; 
+
+  .leftSide {
+    background-color: var(--primary-blue);
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    
+    .artImg {
+      z-index: 2; 
+      position: relative;
+    }
+
+    .back {
+      position: absolute;
+      z-index: 1; 
+      top: 100px;
+      left: 480px;
+      width: 314px; 
+      height: 314px; 
+      transform: translate(-50%, 0%); 
+    }
+
+    h2 {
+      font-size: 40px;
+      color: white;
+    }
+    p {
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  .rightSide {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+}
+

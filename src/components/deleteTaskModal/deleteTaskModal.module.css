@@ -1,0 +1,36 @@
+.deleteTaskContainer {
+  p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .delete {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--primary-blue);
+    padding: 0.6rem 3rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(1.09);
+    }
+  }
+
+  .cancel {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid var(--btn-red);
+    padding: 0.6rem 3rem;
+    border-radius: 8px;
+    color: var(--btn-red);
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+  }
+}
