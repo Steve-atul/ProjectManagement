@@ -153,6 +153,9 @@ export const EditTaskModal = ({ openEditTaskModal, setOpenEditTaskModal,taskId,t
   const handleAssignee = (email) => {
     setSelectedAssignee(email);
     setIsDropdownOpen(false);
+
+    const newTaskData = { ...editSingleTask, assignTo: email };
+    setEditSingleTask(newTaskData);
   };
 
   return (
